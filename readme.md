@@ -1,4 +1,6 @@
 
-Installing Angular CLI (Version 15)
+Install Angular CLI (Version 15)
+>> npm install -g @angular/cli@15
 
-https://github.com/antarikshgosain/resume-website.git
+Create a new Angular Project
+>> ng new portfolio
