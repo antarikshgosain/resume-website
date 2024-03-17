@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../_models/project';
 import { Tag } from '../_models/Tag';
+import { GlobalConstants } from '../../GlobalConstants';
 
 @Component({
   selector: 'app-portfolio',
@@ -10,15 +11,7 @@ import { Tag } from '../_models/Tag';
 })
 export class PortfolioComponent {
 
-  project: Project = {
-    id: 0,
-    name: 'maple app',
-    summary: 'sweet and sour app',
-    description: '',
-    projectLink: '',
-    tags: [Tag.ANGULAR, Tag.JAVA],
-    pictures: [],
-  }
+  projects: Project[] = GlobalConstants.PORTFOLIO;
 
   constructor(private titleService: Title) {
     this.titleService.setTitle('Portfolio - Antariksh Gosain');
