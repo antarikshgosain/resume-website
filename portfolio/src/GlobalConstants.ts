@@ -15,7 +15,7 @@ export const GlobalConstants = {
             description: '',
             projectLink: '',
             tags: [Tag.ANGULAR, Tag.JAVA],
-            pictures: [],
+            pictures: ['../../assets/image3.jpg','../../assets/image1.jpg','../../assets/image1.jpg'],
         },
         {
             id: 1,
@@ -24,8 +24,7 @@ export const GlobalConstants = {
             description: '',
             projectLink: '',
             tags: [Tag.PYTHON, Tag.JAVA],
-            pictures: [],
-        },
+            pictures: ['../../assets/image2.jpg','../../assets/image1.jpg','../../assets/image1.jpg'],        },
         {
             id: 2,
             name: 'SQL AWS Database app',
@@ -33,8 +32,7 @@ export const GlobalConstants = {
             description: '',
             projectLink: '',
             tags: [Tag.AWS, Tag.SQL, Tag.MS_AZURE],
-            pictures: [],
-        },
+            pictures: ['../../assets/image1.jpg','../../assets/image1.jpg','../../assets/image1.jpg'],        },
         {
             id: 3,
             name: 'Health card mobile app',
@@ -42,7 +40,6 @@ export const GlobalConstants = {
             description: '',
             projectLink: '',
             tags: [Tag.AWS, Tag.REACT, Tag.JAVA],
-            pictures: [],
-        }
+            pictures: ['../../assets/image3.jpg','../../assets/image2.jpg','../../assets/image1.jpg'],        }
     ]
 };
