@@ -18,3 +18,12 @@ Added ngx bootstrap
 To create a new component 
 > ng generate component component_name --skip-tests (dont create test files for static data like headers/footers)
 > ng g c new_component (short form)
+
+To create a new service (Service - An Injectable .ts file that is not associated with html/css files)
+> ng generate service resume_service
+> ng g s resume_service (short form)
+
+To add modals component dependency from ngx-bootstrap
+> ng add ngx-bootstrap  --component modals
+Documentation: https://valor-software.com/ngx-bootstrap/#/components
+
