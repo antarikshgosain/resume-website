@@ -25,5 +25,6 @@ To create a new service (Service - An Injectable .ts file that is not associated
 
 To add modals component dependency from ngx-bootstrap
 > ng add ngx-bootstrap  --component modals
+
 Documentation: https://valor-software.com/ngx-bootstrap/#/components
 
