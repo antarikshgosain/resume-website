@@ -13,6 +13,7 @@ import { ProjectsService } from '../_services/projects.service';
 export class PortfolioComponent implements OnInit {
 
   //==>ADD NEW FILTERS FOR BOOLEAN HERE
+  filtering: boolean = false;
 
   //Define Languages Filter
   java: boolean = false;
@@ -54,7 +55,31 @@ export class PortfolioComponent implements OnInit {
     if(this.aws)          {   filterTags.push(Tag.AWS);         }
     if(this.azure)      {   filterTags.push(Tag.MS_AZURE);    }
     
-    this.projects = this.projectsService.GetProjectsByFilter(filterTags);
+    //==>ADD LANGUAGES/FRAMWORKS TO FILTER LOGIC
+    if(this.java || this.javascript || this.python || this.sql ||
+      this.angular || this.react || this.aws || this.azure) {
+      this.filtering = true;  
+    } else { this.filtering = false }
 
+    this.projects = this.projectsService.GetProjectsByFilter(filterTags);
+  }
+
+  ResetFilters(){
+
+    //Reset Languages Filter
+    this.java = false;
+    this.javascript = false;
+    this.python = false;
+    this.sql = false;
+  
+    //Reset Frameworks Filter
+    this.angular = false;
+    this.aws = false;
+    this.react = false;
+    this.azure = false;
+
+    this.filtering = false;
+
+    this.projects = this.projectsService.GetProjects();
   }
 }
