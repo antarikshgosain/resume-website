@@ -43,5 +43,35 @@ export const GlobalConstants = {
             projectLink: 'https://github.com/antarikshgosain/practice',
             tags: [Tag.AWS, Tag.REACT, Tag.JAVA],
             pictures: ['../../assets/image3.jpg','../../assets/image2.jpg','../../assets/image1.jpg'],        }
+    ],
+    WORK_EXPERIENCE : [
+        {
+            companyName: 'Mesons Technologies',
+            title: 'Full Stack Developer',
+            from: 'October 2022',
+            to: 'January 2021',
+            duration: '2+ Years',
+
+            website: 'https://www.mesonstechnologies.com/',
+            roles: [
+                'Creating RESTful APIs using Spring MVC/Springboot (Java 8)',
+                'Creating Front End using Angular 15',
+                'Database management and PROD Deployment Support',
+            ],
+        },
+        {
+            companyName: 'NovoInvent Technologies Pvt. Ltd.',
+            title: 'Full Stack Developer',
+            from: 'June 2016',
+            to: 'July 2019',
+            duration: '3+ Years (1st year Internship)',
+            
+            website: 'https://www.novoinvent.com/',
+            roles: [
+                'Full stack applications on American Healthcare (AHCT)',
+                'AWS account management like VPC, EMR',
+                'Tomcat Server and PostgreSQL setup on EC2',
+            ],
+        },
     ]
 };

@@ -12,6 +12,9 @@ export class ResumeComponent {
     this.titleService.setTitle('Resume - Antariksh Gosain');
   }
 
+  workExperience = GlobalConstants.WORK_EXPERIENCE;
+  workExperienceLength = this.workExperience.length;
+
   DownloadFile() {
     const link = this.renderer.createElement('a'); //creates <a/> elements
     link.setAttribute('target', '_blank');
