@@ -13,7 +13,12 @@ export class ResumeComponent {
   }
 
   workExperience = GlobalConstants.WORK_EXPERIENCE;
-  workExperienceLength = this.workExperience.length;
+  studyExperience = GlobalConstants.STUDIES;
+  certifications = GlobalConstants.CERTIFICATIONS;
+  languageSkills = GlobalConstants.SKILLS_LANGUAGES;
+  frameworkSkills = GlobalConstants.SKILLS_FRAMEWORKS;
+  toolSkills = GlobalConstants.SKILLS_TOOLS_OTHER;
+  hobbies = GlobalConstants.HOBBIES;
 
   DownloadFile() {
     const link = this.renderer.createElement('a'); //creates <a/> elements

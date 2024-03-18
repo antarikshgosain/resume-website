@@ -46,7 +46,7 @@ export const GlobalConstants = {
     ],
     WORK_EXPERIENCE : [
         {
-            companyName: 'Mesons Technologies',
+            name: 'Mesons Technologies',
             title: 'Full Stack Developer',
             from: 'October 2022',
             to: 'January 2021',
@@ -60,7 +60,7 @@ export const GlobalConstants = {
             ],
         },
         {
-            companyName: 'NovoInvent Technologies Pvt. Ltd.',
+            name: 'NovoInvent Technologies Pvt. Ltd.',
             title: 'Full Stack Developer',
             from: 'June 2016',
             to: 'July 2019',
@@ -72,6 +72,71 @@ export const GlobalConstants = {
                 'AWS account management like VPC, EMR',
                 'Tomcat Server and PostgreSQL setup on EC2',
             ],
+        },
+    ],
+    STUDIES : [
+        {
+            name: 'Lambton College, Toronto',
+            title: 'Post Graduation - Mobile Application Development and Design',
+            from: 'September 2019',
+            to: 'April 2021',
+            duration: '2 Years',
+
+            website: 'https://www.lambtoncollege.ca/',
+            roles: [
+                'Graduated with 3.7/4.0 GPA',
+                'Graduation Award: Program Dean\'s Honour List',
+                'Gained Full Time work for Final Semester (Co-op) CPL-1049'
+            ],
+        },
+        {
+            name: 'Chitkara University, Punjab',
+            title: 'Bachelor of Engineering - Computer Science',
+            from: 'June 2013',
+            to: 'July 2017',
+            duration: '4 Years',
+
+            website: 'https://www.chitkara.edu.in/',
+            roles: [
+                'Graduated with 7.56/10.00 CGPA',
+                'Part of UCA: University Coding Academy',
+                'Organized and Hosted Multiple Co-Curricular Activities and Events',
+            ],
+        },
+    ],
+    CERTIFICATIONS: [
+        'Oracle Database SQL Certified #C19602-01',
+        'Red Hat Certified System Administrator (Undergoing)'
+    ],
+    SKILLS_LANGUAGES: [
+        'Java Core and OOPS', 'Javascript', 'Typescript', 'Python', 'SQL', 
+    ],
+    SKILLS_FRAMEWORKS: [
+        'Spring MVC and Springboot', 'Light-4j (Java framework for REST APIs)',
+        'Dynatrace (Open Telemetry)', 'AWS (EC2, S3, Lambdas, Route 53, VPC)', 
+        'CentOS and Ubuntu (Linux Kernel)', 'PostgreSQL and MySQL', 
+        'Firebase and mongoDB (noSQL)'
+    ],
+    SKILLS_TOOLS_OTHER: [
+        'Agile Development','Intel IJ / Eclipse' , 'git / Pull Requests',
+        'SSH / RDP / SFTP', 'Dbeaver / DbVisuvalizer', 'Data Strctures', 
+        'Complexity Analysis', 'Video Editing (MS Clipchamp)', 'Adobe Photoshop'
+    ],
+    HOBBIES : [
+        {
+            description: 'Created and Uploaded Light-4j Tutorials on my Youtube',
+            linkText:'Channel',
+            url: 'https://www.youtube.com/@codingmuscles',
+        },
+        {
+            description: 'Learning French and Spanish on',
+            linkText:'Duolingo',
+            url: 'https://www.duolingo.com/profile/antariksh.gosain',
+        },
+        {
+            description: 'Solving and Discussing Problems on',
+            linkText:'HackerRank',
+            url: 'https://www.hackerrank.com/profile/antariksh_gosain',
         },
     ]
 };

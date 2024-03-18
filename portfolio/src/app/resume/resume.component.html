@@ -1,31 +1,79 @@
 <div class="container text-center">
     <button class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download Resume PDF</button>
-    <accordion [isAnimated]="true" [closeOthers]="false" class="shadow" style="background-color: aquamarine;">
-        <accordion-group heading="Work Experience">
-            <div *ngFor="let work of workExperience; let last=last">
-                <h5 class="leftAlign"><a href="{{work.website}}" target="_blank">{{work.companyName}}</a> - {{work.title}}</h5>
-                <p  class="leftAlign">{{work.from}} to {{work.to}}</p>
-                <p  class="leftAlign">Duration: {{work.duration}} </p>
+    <accordion [isAnimated]="true" [closeOthers]="false" class="shadow" >
+            <accordion-group heading="Work Experience">
+                <div *ngFor="let work of workExperience; let last=last">
+                    <h5 class="leftAlign"><a href="{{work.website}}" target="_blank">{{work.name}}</a> - {{work.title}}</h5>
+                    <p  class="leftAlign">{{work.from}} to {{work.to}}</p>
+                    <p  class="leftAlign">Duration: {{work.duration}} </p>
+                    <h6 class="leftAlign">Roles and Responsibilities</h6>
+                    <ul class="leftAlignList" *ngFor="let role of work.roles">
+                        <li class="">{{role}}</li>
+                    </ul>
+                    <hr *ngIf="!last" class="solid"> <!--Divider-->
+                </div>
+            </accordion-group>
+        <accordion-group heading="Education">
+            <div *ngFor="let study of studyExperience; let last=last">
+                <h5 class="leftAlign"><a href="{{study.website}}" target="_blank">{{study.name}}</a> - {{study.title}}</h5>
+                <p  class="leftAlign">{{study.from}} to {{study.to}}</p>
+                <p  class="leftAlign">Duration: {{study.duration}} </p>
                 <h6 class="leftAlign">Roles and Responsibilities</h6>
-                <ul class="leftAlignList" *ngFor="let role of work.roles">
+                <ul class="leftAlignList" *ngFor="let role of study.roles">
                     <li class="">{{role}}</li>
                 </ul>
-                
-                
                 <hr *ngIf="!last" class="solid"> <!--Divider-->
-                
             </div>
-            
         </accordion-group>
 
-        <accordion-group heading="Education">
-            
+        <accordion-group heading="Certifications">    
+                
+                <ul class="leftAlignList" *ngFor="let cert of certifications; let last=last">
+                    <li class="">{{cert}}</li>
+                    <hr *ngIf="!last" class="solid"> <!--Divider-->
+                </ul>
+                
         </accordion-group>
-        <accordion-group heading="Certifications">
-            
+
+        <accordion-group heading="Skills">    
+            <div class="row leftAlignSkills" >
+                <div class="col">
+                    <h4>Programming Languages:</h4>
+                    <ul class="leftAlignSkillsText" *ngFor="let lang of languageSkills">
+                        <li>{{lang}}</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Frameworks</h4>
+                    <ul class="leftAlignSkillsText" *ngFor="let frame of frameworkSkills">
+                        <li>{{frame}}</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>Tools / Others</h4>
+                    <ul class="leftAlignSkillsText" *ngFor="let tool of toolSkills">
+                        <li>{{tool}}</li>
+                    </ul>
+                </div>
+            </div>
         </accordion-group>
-        <accordion-group heading="Skills">
+
+        <accordion-group heading="Hobbies">    
+            <div class=" leftAlign" >
+                <div class="col">
+                    <h4>Hobbies:</h4>
+                    <ul class="leftAlignText" *ngFor="let hobby of hobbies">
+                        <li>{{hobby.description}} <a href="{{hobby.url}}" target="_blank">{{hobby.linkText}}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+                
+
             
         </accordion-group>
     </accordion>
+    <br/>
 </div>

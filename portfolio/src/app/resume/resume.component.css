@@ -8,3 +8,22 @@
     padding-left: 15%;
     margin: 0em;
 }
+
+.leftAlignSkills{
+    text-align: left;
+    padding-left: 0%;
+    margin: 0em;
+}
+.leftAlignSkillsText{
+    text-align: left;
+    padding-left: 5%;
+    margin: 0em;
+}
+
+accordion-group::ng-deep .btn-link {
+    color: white;
+}
+
+accordion-group::ng-deep .card-header {
+    background-color: #007bff;
+}
