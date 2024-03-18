@@ -13,6 +13,7 @@ import { ProjectsService } from '../_services/projects.service';
 export class PortfolioComponent implements OnInit {
 
   projects = {} as Project[];
+  isCollapsed: boolean = true; //collapsed by default
 
   constructor(private titleService: Title, private projectsService: ProjectsService) {
     this.titleService.setTitle('Portfolio - Antariksh Gosain');
