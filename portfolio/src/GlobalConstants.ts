@@ -5,6 +5,8 @@ export const GlobalConstants = {
     LAST_NAME: "Gosain",
     FULL_NAME: "Antariksh Gosain",
     TITLE: "Software Engineer",
+    DOWNLOAD_RESUME_PATH: "../../assets/pdf/",
+    DOWNLOAD_RESUME_NAME: "Antariksh Gosain 2024 Resume 6 Years Fullstack Devops.pdf",
     
     DESCRIPTION: "Currently working at CIBC, Toronto. Total 6 years of IT Experience mainly regarding Java Backend Development and AWS/DevOps.",
     PORTFOLIO : [
