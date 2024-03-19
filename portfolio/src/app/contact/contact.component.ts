@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { GlobalConstants } from '../../GlobalConstants';
 
 @Component({
   selector: 'app-contact',
@@ -7,6 +8,8 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  profileLinkedin = GlobalConstants.CONTACT_LINKEDIN;
+  profileGithub = GlobalConstants.CONTACT_GITHUB;
   constructor(private titleService: Title) {
     this.titleService.setTitle('Contact - Antariksh Gosain');
   }

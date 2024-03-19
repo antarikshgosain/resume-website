@@ -138,5 +138,7 @@ export const GlobalConstants = {
             linkText:'HackerRank',
             url: 'https://www.hackerrank.com/profile/antariksh_gosain',
         },
-    ]
+    ],
+    CONTACT_LINKEDIN: 'https://www.linkedin.com/in/antariksh-gosain/',
+    CONTACT_GITHUB: 'https://github.com/antarikshgosain/resume-website',
 };
