@@ -17,6 +17,8 @@ import { AccordionModule } from 'ngx-bootstrap/accordion'
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { FormsModule } from '@angular/forms';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     CollapseModule.forRoot(),
     AccordionModule.forRoot(),
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

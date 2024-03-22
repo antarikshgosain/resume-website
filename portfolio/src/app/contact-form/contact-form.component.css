@@ -1,7 +1,3 @@
-div.settings {
-    display:grid;
-    grid-template-columns: max-content max-content;
-    grid-gap:5px;
+.input-error {
+    border: red 1px solid;
 }
-div.settings label       { text-align:right; }
-div.settings label:after { content: ":"; }
