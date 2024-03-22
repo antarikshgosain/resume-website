@@ -16,6 +16,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { AccordionModule } from 'ngx-bootstrap/accordion'
 import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { FormsModule } from '@angular/forms';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     ResumeComponent,
     ContactComponent,
     ProjectCardComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
