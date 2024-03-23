@@ -7,7 +7,7 @@ export const GlobalConstants = {
     TITLE: "Software Engineer",
     DOWNLOAD_RESUME_PATH: "../../assets/pdf/",
     DOWNLOAD_RESUME_NAME: "Antariksh Gosain 2024 Resume 6 Years Fullstack Devops.pdf",
-    
+    PRIMARY_EMAIL_ID: "gosain.antariksh@gmail.com",
     DESCRIPTION: "Currently working at CIBC, Toronto. Total 6 years of IT Experience mainly regarding Java Backend Development and AWS/DevOps.",
     PORTFOLIO : [
         {
@@ -141,4 +141,5 @@ export const GlobalConstants = {
     ],
     CONTACT_LINKEDIN: 'https://www.linkedin.com/in/antariksh-gosain/',
     CONTACT_GITHUB: 'https://github.com/antarikshgosain/resume-website',
+    GOOGLE_RE_CAPTCHA_PUBLIC_KEY: '6Lf5n6IpAAAAAKxiegFUHZCI8Y0JPXPTYZdGGdtf',
 };

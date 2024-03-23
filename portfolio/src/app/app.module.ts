@@ -18,7 +18,8 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { FormsModule } from '@angular/forms';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
-
+//import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from 'ng-recaptcha';
+import { GlobalConstants } from '../GlobalConstants';
 
 @NgModule({
   declarations: [
@@ -43,8 +44,11 @@ import { HttpClientModule } from '@angular/common/http';
     AccordionModule.forRoot(),
     FormsModule,
     HttpClientModule,
+    //RecaptchaV3Module,
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

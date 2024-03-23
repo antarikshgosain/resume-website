@@ -8,8 +8,11 @@ import { GlobalConstants } from '../../GlobalConstants';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  
   profileLinkedin = GlobalConstants.CONTACT_LINKEDIN;
   profileGithub = GlobalConstants.CONTACT_GITHUB;
+  primaryEmailId = GlobalConstants.PRIMARY_EMAIL_ID;
+
   constructor(private titleService: Title) {
     this.titleService.setTitle('Contact - Antariksh Gosain');
   }
