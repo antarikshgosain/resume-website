@@ -18,8 +18,8 @@
             id="message" name="message" required [(ngModel)]="formData.message" required #email="ngModel">
         </div>
         <div class="container">
-            <div class="mb-2 d-flex justify-content-center">
-                <ngx-recaptcha2 #captchaElem [siteKey]="publicRecaptchaKey"></ngx-recaptcha2>
+            <div class="mb-2 d-flex justify-content-center" >
+                <ngx-recaptcha2 #captchaElem [siteKey]="publicRecaptchaKey" [ngClass]="{'input-error': !isCaptchaValid}"></ngx-recaptcha2>
             </div>
         </div>
             

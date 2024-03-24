@@ -34,7 +34,8 @@ import { NgxCaptchaModule } from 'ngx-captcha';
     ContactComponent,
     ProjectCardComponent,
     ProjectModalComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    
   ],
   imports: [
     BrowserModule,
