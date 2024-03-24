@@ -29,5 +29,6 @@ To add modals component dependency from ngx-bootstrap </br>
 > ng add ngx-bootstrap  --component modals
 
 To forcefully add reCaptcah3 packages (with dependencies)
-> npm i ng-recaptcha3 --legacy-peer-deps
+> npm i ng-recaptcha3 --legacy-peer-deps ##NOT working
+> npm i ngx-captcha ##working
 

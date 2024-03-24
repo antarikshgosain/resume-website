@@ -141,5 +141,5 @@ export const GlobalConstants = {
     ],
     CONTACT_LINKEDIN: 'https://www.linkedin.com/in/antariksh-gosain/',
     CONTACT_GITHUB: 'https://github.com/antarikshgosain/resume-website',
-    GOOGLE_RE_CAPTCHA_PUBLIC_KEY: '6Lf5n6IpAAAAAKxiegFUHZCI8Y0JPXPTYZdGGdtf',
+    GOOGLE_RE_CAPTCHA_PUBLIC_KEY: '6Lc5rqIpAAAAAM6hxiHsrGgkGoCTdVhDJl_cp4Zm',
 };

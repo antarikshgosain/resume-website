@@ -20,6 +20,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HttpClientModule } from '@angular/common/http';
 //import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module } from 'ng-recaptcha';
 import { GlobalConstants } from '../GlobalConstants';
+import { NgxCaptchaModule } from 'ngx-captcha';
+
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { GlobalConstants } from '../GlobalConstants';
     FormsModule,
     HttpClientModule,
     //RecaptchaV3Module,
+    NgxCaptchaModule,
+
   ],
   providers: [
     

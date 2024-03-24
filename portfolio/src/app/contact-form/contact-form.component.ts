@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, NgForm } from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule, NgForm } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { GlobalConstants } from '../../GlobalConstants';
+import { ReCaptchaV3Service } from 'ngx-captcha';
 
 
 @Component({
@@ -11,10 +12,11 @@ import { GlobalConstants } from '../../GlobalConstants';
 })
 export class ContactFormComponent {
 
+  publicRecaptchaKey : string = GlobalConstants.GOOGLE_RE_CAPTCHA_PUBLIC_KEY;
   isNameValid = true;
   isMessageValid = true;
 
-  constructor(private formBuilder: FormBuilder,private http: HttpClient, ) {
+  constructor(private formBuilder: FormBuilder,private http: HttpClient, private reCaptchaV3Service: ReCaptchaV3Service) {
 
   }
 
@@ -26,7 +28,7 @@ export class ContactFormComponent {
 
     console.log(this.formData);
 
-    if(this.isNameValid && this.isMessageValid){
+    if(this.isNameValid && this.isMessageValid ){
       const headers = new HttpHeaders({
         'Content-Type': 'application/json'
       });
