@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild  } from '@angular/core';
+import { Component, EventEmitter, OnInit, ViewChild  } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, NgForm } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { GlobalConstants } from '../../GlobalConstants';
@@ -11,9 +11,15 @@ import { ReCaptchaV3Service, ReCaptcha2Component } from 'ngx-captcha';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent {
-  //@ViewChild('captchaElem') captchaElem: ReCaptcha2Component;
+
   @ViewChild('captchaElem', { static: true }) captchaElem!: ReCaptcha2Component;
 
+  resetEvent: EventEmitter<void> = new EventEmitter<void>();
+
+  resetCaptcha() {
+    console.log('Resetting reCAPTCHA');
+    this.resetEvent.emit();
+  }
 
   publicRecaptchaKey : string = GlobalConstants.GOOGLE_RE_CAPTCHA_PUBLIC_KEY;
   isNameValid = true;
@@ -35,7 +41,7 @@ export class ContactFormComponent {
 
     console.log(this.formData);
 
-    if(this.isNameValid && this.isMessageValid ){
+    if(this.isNameValid && this.isMessageValid && this.isCaptchaValid){
       const userResponse = this.captchaElem.getResponse();
       const headers = new HttpHeaders({
         'Content-Type': 'application/json'
@@ -60,6 +66,7 @@ export class ContactFormComponent {
       //clearing form
       this.formData.name="";
       this.formData.message="";
+      this.resetCaptcha();
       window.alert('Message Sent. Thanks ' + data.noteBy + '!\nI will get back to you soon');
       
     }
