@@ -11,13 +11,14 @@ import { Project } from '../_models/project';
 })
 export class HomeComponent implements OnInit {
   description = GlobalConstants.DESCRIPTION;
+  featuredProjectId = GlobalConstants.FEATURED_PROJECT_ID;
   featuredProject = {} as Project;
 
   constructor(private titleService: Title, private projectsService: ProjectsService) {
     this.titleService.setTitle('Welcome to Antariksh\'s Home');
   }
   ngOnInit(): void {
-    this.featuredProject = this.projectsService.GetProjectById(3);
+    this.featuredProject = this.projectsService.GetProjectById(this.featuredProjectId);
   }
   
 }

@@ -67,6 +67,7 @@ export class ContactFormComponent {
       this.formData.name="";
       this.formData.message="";
       this.resetCaptcha();
+      
       window.alert('Message Sent. Thanks ' + data.noteBy + '!\nI will get back to you soon');
       
     }
